@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBAN ROOSTERS - Tienda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <style>
+
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.auth-buttons .btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #f60;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url('background.jpg'); /* Imagen de fondo similar al diseño */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.shop-banner h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.shop-banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.shop-banner .btn {
+  padding: 15px 30px;
+  background-color: #f60;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.shop-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.shop-images img {
+  width: 200px;
+  height: 300px;
+  margin: 0 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #f60;
+}
+
+  </style>
+<body>
+  <header>
+    <div class="logo">URBAN ROOSTERS</div>
+    <nav>
+      <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">TICKETS</a></li>
+        <li><a href="#">COMPETICIONES</a></li>
+        <li><a href="#">ENTRENAMIENTO</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">TIENDA</a></li>
+        <li><a href="#">SOBRE UR</a></li>
+        <li><a href="#">CONTACTO</a></li>
+        <li><a href="#">FMS</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#" class="btn login">INICIAR SESIÓN</a>
+      <a href="#" class="btn register">CREAR CUENTA</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="shop-banner">
+      <h1>UR SHOP MERCHAN</h1>
+      <p>¡Ponte en la piel de tus freestylers favoritos y viste como las estrellas de FMS!</p>
+      <a href="#" class="btn shop-btn">IR A LA TIENDA</a>
+    </div>
+    <div class="shop-images">
+      <img src="img1.jpg" alt="Modelo 1">
+      <img src="img2.jpg" alt="Modelo 2">
+      <img src="img3.jpg" alt="Modelo 3">
+    </div>
+  </section>
+</body>
+</html>

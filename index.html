@@ -8,8 +8,8 @@
 </head>
   <style>
 
-
-    * {
+/* General */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,6 +21,7 @@ body {
   color: #fff;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -47,8 +48,18 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/* Efecto hover en las pestañas del menú */
+nav ul li a:hover {
+  background-color: #f60;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Botones de autenticación */
 .auth-buttons {
   display: flex;
 }
@@ -61,12 +72,18 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
+.auth-buttons .btn:hover {
+  background-color: #ffa500; /* Cambio de color en hover */
+}
+
+/* Sección de la imagen de fondo (Hero) */
 .hero {
   text-align: center;
   padding: 50px 0;
-  background-image: url('background.jpg'); /* Imagen de fondo similar al diseño */
+  background-image: url('https://respeto-hiphop.vercel.app/img.jfif'); /* Usa la ruta correcta de la imagen */
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -106,6 +123,7 @@ nav ul li a {
   border-radius: 10px;
   border: 2px solid #f60;
 }
+
 
   </style>
 <body>

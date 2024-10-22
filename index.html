@@ -490,6 +490,28 @@ nav ul li a:hover {
   volumeSlider.addEventListener('input', () => {
     audioPlayer.volume = volumeSlider.value;
   });
+function openTab(evt, tabName) {
+  // Oculta todas las pestañas
+  const tabContents = document.querySelectorAll('.tab-content');
+  tabContents.forEach(content => {
+    content.style.display = 'none';
+  });
+
+  // Resalta la pestaña activa
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => {
+    tab.classList.remove('active');
+  });
+
+  // Muestra la pestaña seleccionada
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.classList.add('active');
+}
+
+// Inicializa la primera pestaña como activa
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector('.tab').click();
+});
 
 
 

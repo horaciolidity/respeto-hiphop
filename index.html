@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Respeto HipHop </title>
+  <title>Respeto HipHop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Respeto Hip Hop: El movimiento cultural que inspira y promueve la igualdad, la creatividad y la autoexpresión.">
   <meta name="keywords" content="Hip Hop, Respeto, Cultura Urbana, Rap, Graffiti, Breakdance, DJing, Autoexpresión, Comunidad, Música">
@@ -21,8 +21,7 @@
   <meta name="twitter:description" content="Descubre la esencia del Respeto Hip Hop y su impacto cultural.">
   <meta name="twitter:image" content="https://respeto-hiphop.vercel.app/img1.jfif">
 </head>
-  <style>
-
+<style>
 /* General */
 * {
   margin: 0;
@@ -43,16 +42,13 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #111;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+  overflow-x: auto; /* Habilitar scroll horizontal */
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  white-space: nowrap; /* Evitar que el menú se rompa en varias líneas */
 }
 
 nav ul li {
@@ -98,9 +94,7 @@ nav ul li a:hover {
 .hero {
   text-align: center;
   padding: 50px 0;
-  background-image: url('https://respeto-hiphop.vercel.app/img1.jfif'); /* Usa la ruta correcta de la imagen */
-  background-size: cover;
-  background-position: center;
+  background-color: #222; /* Fondo sólido en lugar de imagen */
   color: #fff;
 }
 
@@ -139,8 +133,156 @@ nav ul li a:hover {
   border: 2px solid #f60;
 }
 
+/* Sección de entrevistas */
+.entrevistas {
+  padding: 50px 20px;
+  background-color: #111;
+}
 
-  </style>
+.entrevistas h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.entrevistas article {
+  margin-bottom: 20px;
+}
+
+.entrevistas article h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.entrevistas article p {
+  font-size: 16px;
+}
+
+/* Formulario de contacto */
+.contacto {
+  padding: 50px 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+.contacto h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.contacto button {
+  padding: 15px;
+  background-color: #f60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background-color: #ffa500;
+}
+
+   .winamp {
+      width: 350px;
+      padding: 10px;
+      background-color: #111;
+      border: 2px solid #555;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #000;
+      position: relative;
+    }
+
+    .winamp h2 {
+      font-size: 16px;
+      background-color: #222;
+      padding: 5px;
+      margin: 0;
+      text-align: center;
+      color: #0f0;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .controls button {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .controls button:hover {
+      background-color: #444;
+    }
+
+    .controls button:active {
+      background-color: #888;
+    }
+
+    .progress-container {
+      position: relative;
+      width: 100%;
+      height: 10px;
+      background-color: #444;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .progress {
+      position: absolute;
+      height: 100%;
+      width: 0;
+      background-color: #f60;
+      border-radius: 5px;
+    }
+
+    .volume-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .volume-container label {
+      margin-right: 10px;
+    }
+
+    .volume-container input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      background: #333;
+      border-radius: 5px;
+    }
+
+    .volume-container input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      background-color: #f60;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+</style>
 <body>
   <header>
     <div class="logo">Respeto HipHop</div>
@@ -175,5 +317,86 @@ nav ul li a:hover {
       <img src="https://respeto-hiphop.vercel.app/img4.jfif" alt="Modelo 3">
     </div>
   </section>
+
+  <div class="winamp">
+  <h2>Winamp - Ahora Suena</h2>
+  <audio id="audio-player" src="tu-cancion.mp3"></audio>
+
+  <div class="controls">
+    <button id="play-btn">Play</button>
+    <button id="pause-btn">Pause</button>
+  </div>
+
+  <div class="progress-container" id="progress-container">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <div class="volume-container">
+    <label for="volume">Volumen</label>
+    <input type="range" id="volume" min="0" max="1" step="0.1">
+  </div>
+</div>
+
+
+  <!-- Sección de entrevistas -->
+  <section class="entrevistas">
+    <h2>Entrevistas a Artistas</h2>
+    <article>
+      <h3>Entrevista a MC Juan</h3>
+      <p>MC Juan nos cuenta sobre su trayectoria en el mundo del rap y su impacto en la cultura urbana.</p>
+    </article>
+    <article>
+      <h3>Entrevista a DJ Lu</h3>
+      <p>DJ Lu comparte sus inicios y cómo el scratching cambió su vida en la escena del Hip Hop mendocino.</p>
+    </article>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 </body>
+  <script>
+ const audioPlayer = document.getElementById('audio-player');
+  const playBtn = document.getElementById('play-btn');
+  const pauseBtn = document.getElementById('pause-btn');
+  const progressContainer = document.getElementById('progress-container');
+  const progress = document.getElementById('progress');
+  const volumeSlider = document.getElementById('volume');
+
+  playBtn.addEventListener('click', () => {
+    audioPlayer.play();
+  });
+
+  pauseBtn.addEventListener('click', () => {
+    audioPlayer.pause();
+  });
+
+  audioPlayer.addEventListener('timeupdate', () => {
+    const { duration, currentTime } = audioPlayer;
+    const percent = (currentTime / duration) * 100;
+    progress.style.width = `${percent}%`;
+  });
+
+  progressContainer.addEventListener('click', (e) => {
+    const width = progressContainer.clientWidth;
+    const clickX = e.offsetX;
+    const duration = audioPlayer.duration;
+    audioPlayer.currentTime = (clickX / width) * duration;
+  });
+
+  volumeSlider.addEventListener('input', () => {
+    audioPlayer.volume = volumeSlider.value;
+  });
+
+
+
+    
+  </script>
 </html>

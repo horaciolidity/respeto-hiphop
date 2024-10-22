@@ -29,12 +29,18 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-}
-
+ body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://www.teahub.io/photos/full/31-319410_90s-hip-hop-background.jpg'); /* Imagen de fondo estilo Hip-Hop noventero */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 /* Header */
 header {
   display: flex;
@@ -197,14 +203,15 @@ nav ul li a:hover {
   background-color: #ffa500;
 }
 
-   .winamp {
+  .winamp {
       width: 350px;
       padding: 10px;
       background-color: #111;
       border: 2px solid #555;
       border-radius: 5px;
-      box-shadow: 0 0 10px #000;
+      box-shadow: 0 0 20px #000;
       position: relative;
+      text-align: center; /* Centra el contenido del reproductor */
     }
 
     .winamp h2 {
@@ -212,14 +219,13 @@ nav ul li a:hover {
       background-color: #222;
       padding: 5px;
       margin: 0;
-      text-align: center;
       color: #0f0;
       font-family: "Courier New", Courier, monospace;
     }
 
     .controls {
       display: flex;
-      justify-content: space-between;
+      justify-content: center; /* Centra los botones de control */
       margin: 10px 0;
     }
 
@@ -230,6 +236,7 @@ nav ul li a:hover {
       padding: 10px;
       cursor: pointer;
       border-radius: 3px;
+      margin: 0 10px; /* Añade margen entre los botones */
     }
 
     .controls button:hover {
@@ -247,6 +254,7 @@ nav ul li a:hover {
       background-color: #444;
       cursor: pointer;
       border-radius: 5px;
+      margin: 10px 0;
     }
 
     .progress {
@@ -260,6 +268,7 @@ nav ul li a:hover {
     .volume-container {
       display: flex;
       align-items: center;
+      justify-content: center; /* Centra el control de volumen */
       margin-top: 10px;
     }
 

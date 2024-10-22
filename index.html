@@ -23,6 +23,7 @@
 </head>
 <style>
 /* General */
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -42,15 +43,13 @@ body {
   color: #fff;
 }
 
-
-
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 0.8); /* Fondo semitransparente */
   overflow-x: auto; /* Habilitar scroll horizontal */
 }
 
@@ -99,11 +98,11 @@ nav ul li a:hover {
   background-color: #ffa500; /* Cambio de color en hover */
 }
 
-/* Sección de la imagen de fondo (Hero) */
+/* Sección Hero */
 .hero {
   text-align: center;
   padding: 50px 0;
-  background-color: #222; /* Fondo sólido en lugar de imagen */
+  background-color: rgba(34, 34, 34, 0.7); /* Fondo semitransparente */
   color: #fff;
 }
 
@@ -127,6 +126,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Sección de imágenes */
 .shop-images {
   display: flex;
   justify-content: center;
@@ -145,7 +145,7 @@ nav ul li a:hover {
 /* Sección de entrevistas */
 .entrevistas {
   padding: 50px 20px;
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 0.8); /* Fondo semitransparente */
 }
 
 .entrevistas h2 {
@@ -169,7 +169,7 @@ nav ul li a:hover {
 /* Formulario de contacto */
 .contacto {
   padding: 50px 20px;
-  background-color: #222;
+  background-color: rgba(34, 34, 34, 0.7); /* Fondo semitransparente */
   color: #fff;
 }
 
@@ -206,91 +206,94 @@ nav ul li a:hover {
   background-color: #ffa500;
 }
 
-   .winamp {
-      width: 350px;
-      padding: 10px;
-      background-color: #111;
-      border: 2px solid #555;
-      border-radius: 5px;
-      box-shadow: 0 0 10px #000;
-      position: relative;
-    }
+/* Winamp */
+.winamp {
+  width: 350px;
+  padding: 10px;
+  background-color: #111;
+  border: 2px solid #555;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  position: relative;
+  margin: 50px auto;
+}
 
-    .winamp h2 {
-      font-size: 16px;
-      background-color: #222;
-      padding: 5px;
-      margin: 0;
-      text-align: center;
-      color: #0f0;
-      font-family: "Courier New", Courier, monospace;
-    }
+.winamp h2 {
+  font-size: 16px;
+  background-color: #222;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+}
 
-    .controls {
-      display: flex;
-      justify-content: space-between;
-      margin: 10px 0;
-    }
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
 
-    .controls button {
-      background-color: #222;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 3px;
-    }
+.controls button {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
 
-    .controls button:hover {
-      background-color: #444;
-    }
+.controls button:hover {
+  background-color: #444;
+}
 
-    .controls button:active {
-      background-color: #888;
-    }
+.controls button:active {
+  background-color: #888;
+}
 
-    .progress-container {
-      position: relative;
-      width: 100%;
-      height: 10px;
-      background-color: #444;
-      cursor: pointer;
-      border-radius: 5px;
-    }
+.progress-container {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #444;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-    .progress {
-      position: absolute;
-      height: 100%;
-      width: 0;
-      background-color: #f60;
-      border-radius: 5px;
-    }
+.progress {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background-color: #f60;
+  border-radius: 5px;
+}
 
-    .volume-container {
-      display: flex;
-      align-items: center;
-      margin-top: 10px;
-    }
+.volume-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
 
-    .volume-container label {
-      margin-right: 10px;
-    }
+.volume-container label {
+  margin-right: 10px;
+}
 
-    .volume-container input[type="range"] {
-      -webkit-appearance: none;
-      width: 100%;
-      background: #333;
-      border-radius: 5px;
-    }
+.volume-container input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: #333;
+  border-radius: 5px;
+}
 
-    .volume-container input[type="range"]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 15px;
-      height: 15px;
-      background-color: #f60;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+.volume-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #f60;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 </style>
 <body>
   <header>
@@ -345,7 +348,7 @@ nav ul li a:hover {
     <input type="range" id="volume" min="0" max="1" step="0.1">
   </div>
 
-
+  </div>
   <!-- Sección de entrevistas -->
   <section class="entrevistas">
     <h2>Entrevistas a Artistas</h2>

@@ -29,32 +29,35 @@
   box-sizing: border-box;
 }
 
- body {
-      font-family: Arial, sans-serif;
-      background-image: url('https://www.teahub.io/photos/full/31-319410_90s-hip-hop-background.jpg'); /* Imagen de fondo estilo Hip-Hop noventero */
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://www.teahub.io/photos/full/31-319410_90s-hip-hop-background.jpg'); /* Imagen de fondo estilo Hip-Hop noventero */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0 20px; /* Margen lateral para evitar que el contenido toque los bordes */
+}
+
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
   padding: 20px;
   background-color: #111;
-  overflow-x: auto; /* Habilitar scroll horizontal */
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  white-space: nowrap; /* Evitar que el menú se rompa en varias líneas */
 }
 
 nav ul li {
@@ -93,15 +96,16 @@ nav ul li a:hover {
 }
 
 .auth-buttons .btn:hover {
-  background-color: #ffa500; /* Cambio de color en hover */
+  background-color: #ffa500;
 }
 
 /* Sección de la imagen de fondo (Hero) */
 .hero {
   text-align: center;
   padding: 50px 0;
-  background-color: #222; /* Fondo sólido en lugar de imagen */
+  background-color: #222; /* Fondo sólido */
   color: #fff;
+  width: 100%;
 }
 
 .shop-banner h1 {
@@ -124,25 +128,12 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-.shop-images {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.shop-images img {
-  width: 200px;
-  height: 300px;
-  margin: 0 10px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 2px solid #f60;
-}
-
 /* Sección de entrevistas */
 .entrevistas {
   padding: 50px 20px;
   background-color: #111;
+  width: 100%;
+  text-align: center;
 }
 
 .entrevistas h2 {
@@ -168,6 +159,9 @@ nav ul li a:hover {
   padding: 50px 20px;
   background-color: #222;
   color: #fff;
+  width: 100%;
+  max-width: 600px; /* Limitar el ancho del formulario */
+  margin: 0 auto;
 }
 
 .contacto h2 {
@@ -203,94 +197,97 @@ nav ul li a:hover {
   background-color: #ffa500;
 }
 
-  .winamp {
-      width: 350px;
-      padding: 10px;
-      background-color: #111;
-      border: 2px solid #555;
-      border-radius: 5px;
-      box-shadow: 0 0 20px #000;
-      position: relative;
-      text-align: center; /* Centra el contenido del reproductor */
-    }
+/* Winamp Estilo */
+.winamp {
+  width: 350px;
+  padding: 10px;
+  background-color: #111;
+  border: 2px solid #555;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #000;
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
 
-    .winamp h2 {
-      font-size: 16px;
-      background-color: #222;
-      padding: 5px;
-      margin: 0;
-      color: #0f0;
-      font-family: "Courier New", Courier, monospace;
-    }
+.winamp h2 {
+  font-size: 16px;
+  background-color: #222;
+  padding: 5px;
+  margin: 0;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+}
 
-    .controls {
-      display: flex;
-      justify-content: center; /* Centra los botones de control */
-      margin: 10px 0;
-    }
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
 
-    .controls button {
-      background-color: #222;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 3px;
-      margin: 0 10px; /* Añade margen entre los botones */
-    }
+.controls button {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 10px;
+}
 
-    .controls button:hover {
-      background-color: #444;
-    }
+.controls button:hover {
+  background-color: #444;
+}
 
-    .controls button:active {
-      background-color: #888;
-    }
+.controls button:active {
+  background-color: #888;
+}
 
-    .progress-container {
-      position: relative;
-      width: 100%;
-      height: 10px;
-      background-color: #444;
-      cursor: pointer;
-      border-radius: 5px;
-      margin: 10px 0;
-    }
+.progress-container {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #444;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+}
 
-    .progress {
-      position: absolute;
-      height: 100%;
-      width: 0;
-      background-color: #f60;
-      border-radius: 5px;
-    }
+.progress {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background-color: #f60;
+  border-radius: 5px;
+}
 
-    .volume-container {
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Centra el control de volumen */
-      margin-top: 10px;
-    }
+.volume-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
 
-    .volume-container label {
-      margin-right: 10px;
-    }
+.volume-container label {
+  margin-right: 10px;
+}
 
-    .volume-container input[type="range"] {
-      -webkit-appearance: none;
-      width: 100%;
-      background: #333;
-      border-radius: 5px;
-    }
+.volume-container input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: #333;
+  border-radius: 5px;
+}
 
-    .volume-container input[type="range"]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 15px;
-      height: 15px;
-      background-color: #f60;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+.volume-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #f60;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 </style>
 <body>
   <header>

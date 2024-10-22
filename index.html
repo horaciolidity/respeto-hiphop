@@ -145,25 +145,59 @@ nav ul li a:hover {
 .entrevistas {
   padding: 50px 20px;
   background-color: rgba(17, 17, 17, 0.8); /* Fondo semitransparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .entrevistas h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  text-align: center;
+  color: #f60; /* Color destacado */
 }
 
-.entrevistas article {
+.tabs {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-.entrevistas article h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.tab {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.entrevistas article p {
-  font-size: 16px;
+.tab:hover {
+  background-color: #444;
 }
+
+.tab-content {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para el contenido */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.tab-content article {
+  margin-bottom: 20px;
+}
+
+.tab-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0f0; /* Color destacado */
+}
+
+.tab-content p {
+  font-size: 16px;
+  color: #fff;
+}
+
 
 /* Formulario de contacto */
 .contacto {
@@ -380,16 +414,37 @@ nav ul li a:hover {
 
   </div>
   <!-- Sección de entrevistas -->
-  <section class="entrevistas">
-    <h2>Entrevistas a Artistas</h2>
+<div class="entrevistas">
+  <h2>Entrevistas</h2>
+  <div class="tabs">
+    <div class="tab" onclick="openTab(event, 'artistas')">Artistas</div>
+    <div class="tab" onclick="openTab(event, 'productores')">Productores</div>
+    <div class="tab" onclick="openTab(event, 'dj')">DJ</div>
+  </div>
+  <div class="tab-content" id="artistas">
     <article>
-      <h3>Entrevista a MC Juan</h3>
-      <p>MC Juan nos cuenta sobre su trayectoria en el mundo del rap y su impacto en la cultura urbana.</p>
+      <h3>Entrevista a Artista 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque.</p>
     </article>
     <article>
-      <h3>Entrevista a DJ Lu</h3>
-      <p>DJ Lu comparte sus inicios y cómo el scratching cambió su vida en la escena del Hip Hop mendocino.</p>
+      <h3>Entrevista a Artista 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque.</p>
     </article>
+  </div>
+  <div class="tab-content" id="productores" style="display:none;">
+    <article>
+      <h3>Entrevista a Productor 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque.</p>
+    </article>
+  </div>
+  <div class="tab-content" id="dj" style="display:none;">
+    <article>
+      <h3>Entrevista a DJ 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque.</p>
+    </article>
+  </div>
+</div>
+
   </section>
 
   <!-- Formulario de contacto -->

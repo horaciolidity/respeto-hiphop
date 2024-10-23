@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafiteros - Hip Hop 4 Elementos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f4f4f4;
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+
+        .graffiti-section {
+            padding: 50px 0;
+            background-color: #111;
+        }
+
+        .graffiti-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .graffiti-card {
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .graffiti-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .graffiti-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .graffiti-card h3 {
+            color: #4caf50;
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+
+        .graffiti-card p {
+            padding: 0 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .graffiti-card .qualities {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .graffiti-card .qualities li {
+            background-color: #333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        /* Botón */
+        .graffiti-card .btn {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #111;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .graffiti-card .btn:hover {
+            background-color: #66bb6a;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="graffiti-section">
+        <h2>Grafiteros Destacados</h2>
+        <div class="graffiti-container">
+            <!-- Graffiti Card 1 -->
+            <div class="graffiti-card">
+                <img src="https://via.placeholder.com/300" alt="Grafitero 1">
+                <h3>Inkz</h3>
+                <p>Con un estilo audaz y colores vibrantes, Inkz es conocido por sus murales que cuentan historias urbanas.</p>
+                <ul class="qualities">
+                    <li>Estilo: Murales grandes</li>
+                    <li>Temática: Cultura callejera</li>
+                    <li>Colaboraciones: Crew Art Masters</li>
+                </ul>
+                <a href="#" class="btn">Ver obras</a>
+            </div>
+
+            <!-- Graffiti Card 2 -->
+            <div class="graffiti-card">
+                <img src="https://via.placeholder.com/300" alt="Grafitero 2">
+                <h3>Lady Spray</h3>
+                <p>Lady Spray fusiona la fuerza femenina con la expresión visual en un arte que rompe estereotipos.</p>
+                <ul class="qualities">
+                    <li>Estilo: Arte feminista</li>
+                    <li>Temática: Identidad y género</li>
+                    <li>Colaboraciones: Urban Queens</li>
+                </ul>
+                <a href="#" class="btn">Ver obras</a>
+            </div>
+
+            <!-- Graffiti Card 3 -->
+            <div class="graffiti-card">
+                <img src="https://via.placeholder.com/300" alt="Grafitero 3">
+                <h3>Tagman</h3>
+                <p>Tagman es una leyenda del graffiti por sus firmas únicas y su presencia en los espacios más icónicos de la ciudad.</p>
+                <ul class="qualities">
+                    <li>Estilo: Tags rápidos</li>
+                    <li>Temática: Expresión anónima</li>
+                    <li>Colaboraciones: Street Legends Crew</li>
+                </ul>
+                <a href="#" class="btn">Ver obras</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

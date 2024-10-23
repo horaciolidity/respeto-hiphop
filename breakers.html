@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Dancers - Hip Hop 4 Elementos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f4f4f4;
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+
+        .break-section {
+            padding: 50px 0;
+            background-color: #111;
+        }
+
+        .break-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .dancer-card {
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .dancer-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .dancer-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .dancer-card h3 {
+            color: #e91e63;
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+
+        .dancer-card p {
+            padding: 0 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .dancer-card .qualities {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .dancer-card .qualities li {
+            background-color: #333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        /* Botón */
+        .dancer-card .btn {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #e91e63;
+            color: #111;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .dancer-card .btn:hover {
+            background-color: #ff4081;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="break-section">
+        <h2>Bailarines de Break Dance</h2>
+        <div class="break-container">
+            <!-- Dancer Card 1 -->
+            <div class="dancer-card">
+                <img src="https://via.placeholder.com/300" alt="Bailarín 1">
+                <h3>B-Boy Nitro</h3>
+                <p>Con movimientos explosivos y un estilo que desafía la gravedad, B-Boy Nitro es conocido por su precisión y energía.</p>
+                <ul class="qualities">
+                    <li>Especialidad: Powermoves</li>
+                    <li>Temática: Competición</li>
+                    <li>Grupo: Street Fighters Crew</li>
+                </ul>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+
+            <!-- Dancer Card 2 -->
+            <div class="dancer-card">
+                <img src="https://via.placeholder.com/300" alt="Bailarín 2">
+                <h3>B-Girl Luna</h3>
+                <p>Con su estilo fluido y creatividad única, B-Girl Luna está rompiendo esquemas en la escena del break dance femenino.</p>
+                <ul class="qualities">
+                    <li>Especialidad: Footwork</li>
+                    <li>Temática: Expresión creativa</li>
+                    <li>Grupo: Underground Queens</li>
+                </ul>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+
+            <!-- Dancer Card 3 -->
+            <div class="dancer-card">
+                <img src="https://via.placeholder.com/300" alt="Bailarín 3">
+                <h3>B-Boy Blaze</h3>
+                <p>Mezclando acrobacias y estilo old-school, B-Boy Blaze es una leyenda viva en la comunidad del break dance.</p>
+                <ul class="qualities">
+                    <li>Especialidad: Acrobacias</li>
+                    <li>Temática: Old School</li>
+                    <li>Grupo: Dynamic Rockers</li>
+                </ul>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

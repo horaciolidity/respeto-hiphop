@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJs - Hip Hop 4 Elementos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f4f4f4;
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+
+        .dj-section {
+            padding: 50px 0;
+            background-color: #111;
+        }
+
+        .dj-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .dj-card {
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .dj-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .dj-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .dj-card h3 {
+            color: #ffeb3b;
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+
+        .dj-card p {
+            padding: 0 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .dj-card .qualities {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .dj-card .qualities li {
+            background-color: #333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        /* Botón */
+        .dj-card .btn {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #ffeb3b;
+            color: #111;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .dj-card .btn:hover {
+            background-color: #ffee58;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="dj-section">
+        <h2>DJs en la Escena</h2>
+        <div class="dj-container">
+            <!-- DJ Card 1 -->
+            <div class="dj-card">
+                <img src="https://via.placeholder.com/300" alt="DJ 1">
+                <h3>DJ Spin</h3>
+                <p>Maestro del scratching y el turntablism, DJ Spin es una leyenda en la escena underground, conocido por su versatilidad y creatividad en las tornamesas.</p>
+                <ul class="qualities">
+                    <li>Especialidad: Turntablism</li>
+                    <li>Temática: Batallas de DJs</li>
+                    <li>Eventos: Red Bull Thre3Style</li>
+                </ul>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+
+            <!-- DJ Card 2 -->
+            <div class="dj-card">
+                <img src="https://via.placeholder.com/300" alt="DJ 2">
+                <h3>DJ Flava</h3>
+                <p>Con una mezcla de estilos que van desde el hip hop clásico hasta el trap, DJ Flava ha sabido mantenerse relevante en la cultura urbana actual.</p>
+                <ul class="qualities">
+                    <li>Especialidad: Mezclas en vivo</li>
+                    <li>Temática: Hip Hop & Trap</li>
+                    <li>Eventos: Urban Beats Festival</li>
+                </ul>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+
+            <!-- DJ Card 3 -->
+            <div class="dj-card">
+                <img src="https://via.placeholder.com/300" alt="DJ 3">
+                <h3>DJ Bassline</h3>
+                <p>Con su enfoque en bajos profundos y beats contundentes, DJ Bassline es un experto en hacer vibrar las pistas de baile en las fiestas más grandes.</p>
+                <ul class="qualities">
+                    <li>Especialidad: Bass-heavy sets</li>
+                    <li>Temática: Música electrónica y hip hop</li>
+                    <li>Eventos: Boom Boom Room</li>
+                </ul>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

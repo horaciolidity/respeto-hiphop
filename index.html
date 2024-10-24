@@ -125,21 +125,27 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Sección de imágenes */
-.shop-images {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
+ .shop-images {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
 
-.shop-images img {
-  width: 200px;
-  height: 300px;
-  margin: 0 10px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 2px solid #f60;
-}
+        .shop-images img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .shop-images img.active {
+            opacity: 1;
+        }
 
 /* Sección de entrevistas */
 .entrevistas {
@@ -520,6 +526,17 @@ function openTab(evt, tabName) {
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelector('.tab').click();
 });
+     const images = document.querySelectorAll('.shop-images img');
+        let currentIndex = 0;
+        const intervalTime = 3000; // Tiempo que cada imagen se muestra (3 segundos)
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active'); // Quita la clase 'active' de la imagen actual
+            currentIndex = (currentIndex + 1) % images.length; // Pasa a la siguiente imagen, vuelve al inicio al final
+            images[currentIndex].classList.add('active'); // Añade la clase 'active' a la nueva imagen
+        }
+
+        setInterval(showNextImage, intervalTime); // Cambia las imágenes cada 3 segundos
 
 
 

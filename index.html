@@ -125,24 +125,25 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
- .shop-images {
+
+        .shop-images {
             position: relative;
-            width: 800px;  /* Ancho del contenedor */
-            height: 500px; /* Altura del contenedor */
+            width: 800px;
+            height: 500px;
             overflow: hidden;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000; /* Color de fondo para el contenedor */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+            background-color: #000; /* Fondo para que no se vea raro si hay imágenes más pequeñas */
         }
 
         .shop-images img {
-            position: absolute;
             max-width: 100%;
             max-height: 100%;
-            object-fit: contain; /* Las imágenes se ajustan sin recortes */
+            position: absolute;
             opacity: 0;
             transition: opacity 1s ease-in-out;
         }
